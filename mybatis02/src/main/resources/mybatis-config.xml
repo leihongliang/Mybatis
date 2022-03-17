@@ -10,10 +10,15 @@
 <!--        <property name="password" value="123456"/>-->
     </properties>
     
+    <settings>
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+    
     <typeAliases>
         <!--<typeAlias type="learn.pojo.User" alias="User"/>-->
         <typeAlias type="learn.pojo.User" />
     </typeAliases>
+
 
     <!--环境-->
     <environments default="development">

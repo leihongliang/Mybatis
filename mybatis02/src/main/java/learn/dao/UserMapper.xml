@@ -3,9 +3,15 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<!--namespace命名空间绑定一个对应的mapper/dao接口-->
+
 <mapper namespace="learn.dao.UserMapper">
-    <select id="getUserById" parameterType="int" resultType="learn.pojo.User">
-        select * from mybatis.user where id = #{id}
+    <resultMap id="UserMap" type="User">
+        <result column="pwd" property="password" />
+    </resultMap>
+
+<!--    <select id="getUserById" parameterType="int" resultType="learn.pojo.User">-->
+    <select id="getUserById" parameterType="int" resultMap="UserMap">
+        select * from mybatis.user where id = #{id};
+        <!--select id, name, pwd as password from mybatis.user where id = #{id}-->
     </select>
 </mapper>
