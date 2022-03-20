@@ -32,7 +32,7 @@ public class UserDaoTest {
     }
 
     /**
-     * 分页查询
+     * Limit分页查询
      */
     @Test
     public void getUserByLimit(){
