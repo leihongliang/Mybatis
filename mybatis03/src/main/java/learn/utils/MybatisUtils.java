@@ -25,7 +25,7 @@ public class MybatisUtils {
 
     // SqlSession包含面向数据库执行sql命令所需的所有方法
     public static SqlSession getSqlSession(){
-//        SqlSession sqlSession = sqlSessionFactory.openSession();
+        // ture 为自动提交事务
         return sqlSessionFactory.openSession();
     }
 }
