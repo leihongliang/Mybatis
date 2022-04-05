@@ -2,9 +2,8 @@ package learn.pojo;
 import lombok.Data;
 
 @Data
-public class Student {
+public class Teacher {
     private int id;
-    private int tid;
     private String name;
-    private Teacher teacher;
+
 }

@@ -1,10 +1,10 @@
 package learn.pojo;
 import lombok.Data;
+import java.util.List;
 
 @Data
-public class Student {
+public class Teacher {
     private int id;
-    private int tid;
     private String name;
-    private Teacher teacher;
+    private List<Student> students;
 }

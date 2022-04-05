@@ -6,5 +6,5 @@ public class Student {
     private int id;
     private int tid;
     private String name;
-    private Teacher teacher;
+
 }
